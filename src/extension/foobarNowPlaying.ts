@@ -1,6 +1,6 @@
 import type NodeCG from 'nodecg/types';
 import { foobarNowPlaying, foobarSourceFile } from './replicants';
-import { existsSync, readFileSync, statSync } from 'node:fs';
+import { readFileSync, statSync } from 'node:fs';
 import { logError } from '../utils/utils';
 
 export function startFoobarNowPlayingInterval(_nodecg: NodeCG.ServerAPI) {
