@@ -46,6 +46,7 @@ export const Subtitle = styled.h4`
 
 export const InputRow = styled.div`
   position: relative;
+  width: 100%;
 
   & label:not(.toggle-switch),
   & header {

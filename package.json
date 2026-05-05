@@ -20,7 +20,8 @@
     },
     "dashboard": {
       "source": [
-        "src/dashboard/html/countdown.html"
+        "src/dashboard/html/countdown.html",
+        "src/dashboard/html/foobar-now-playing.html"
       ],
       "distDir": "dashboard",
       "publicUrl": "/bundles/nodecg-event-supplimentaries/dashboard"
@@ -52,6 +53,13 @@
         "name": "supplimentaries-countdown",
         "title": "Supplimentaries - Countdown",
         "file": "countdown.html",
+        "width": 3,
+        "workspace": "Supplimentaries"
+      },
+      {
+        "name": "supplimentaries-foobar-now-playing",
+        "title": "Supplimentaries - Foobar Now Playing",
+        "file": "foobar-now-playing.html",
         "width": 3,
         "workspace": "Supplimentaries"
       }

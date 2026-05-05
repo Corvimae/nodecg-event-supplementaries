@@ -15,8 +15,12 @@ module.exports = (nodecg: NodeCG.ServerAPI) => {
 
 // Imports need to be lazy loaded so that the nodecg context is set before initializing replicants
 async function initializeExtension(nodecg: NodeCG.ServerAPI): Promise<void> {
- const { startCountdownInterval } = await import('./countdown');
+  const { startCountdownInterval } = await import('./countdown');
+  const { startFoobarNowPlayingInterval } = await import('./foobarNowPlaying');
  
- // Countdown interval
- startCountdownInterval(nodecg);
+  // Countdown interval
+  startCountdownInterval(nodecg);
+
+  // Foobar Now Playing interval
+  startFoobarNowPlayingInterval(nodecg);
 }
