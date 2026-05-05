@@ -1,0 +1,8 @@
+node_modules/
+/dashboard
+/graphics
+.cache/
+.parcel-cache/
+.DS_Store
+/dist
+/extension

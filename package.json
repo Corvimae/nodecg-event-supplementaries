@@ -1,0 +1,66 @@
+{
+  "name": "nodecg-event-supplimentaries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx parcel watch --no-cache --no-hmr",
+    "build": "npx parcel build",
+    "start": "npx nodecg start",
+    "clean": "rm -rf graphics && rm -rf dashboard && rm -rf extension",
+    "tsc": "npx tsc"
+  },
+  "targets": {
+    "extension": {
+      "source": "src/extension/index.ts",
+      "distDir": "extension",
+      "engines": {
+        "node": ">= 18"
+      }
+    },
+    "dashboard": {
+      "source": [
+        "src/dashboard/html/countdown.html"
+      ],
+      "distDir": "dashboard",
+      "publicUrl": "/bundles/nodecg-event-supplimentaries/dashboard"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.5",
+  "dependencies": {
+    "@nodecg/react-hooks": "^1.0.3",
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/styled-components": "^5.1.36",
+    "lodash": "^4.18.1",
+    "nodecg": "^2.6.4",
+    "parcel": "^2.16.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "styled-components": "^6.4.1",
+    "type-fest": "^5.6.0"
+  },
+  "nodecg": {
+    "compatibleRange": "^1.5.0||^2",
+    "dashboardPanels": [
+      {
+        "name": "supplimentaries-countdown",
+        "title": "Supplimentaries - Countdown",
+        "file": "countdown.html",
+        "width": 3,
+        "workspace": "Supplimentaries"
+      }
+    ]
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "lmdb"
+    ]
+  }
+}
