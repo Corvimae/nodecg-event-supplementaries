@@ -21,7 +21,7 @@ export function useFallbackReplicant<V, T = Jsonify<V>>(
 }
 
 export function useOnMount(callback: React.EffectCallback) {
-  const savedCallback = useRef<React.EffectCallback | undefined>();
+  const savedCallback = useRef<React.EffectCallback | undefined>(undefined);
 
   useEffect(() => {
     savedCallback.current = callback;
@@ -35,3 +35,4 @@ export function useOnMount(callback: React.EffectCallback) {
     };
   }, []);
 }
+

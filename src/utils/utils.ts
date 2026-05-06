@@ -1,4 +1,4 @@
-export const BUNDLE_NAME = 'nodecg-event-supplimentaries';
+export const BUNDLE_NAME = 'nodecg-event-supplementaries';
 
 // eslint-disable-next-line no-console
 export function log(message: string, source = BUNDLE_NAME, method = console.log) {

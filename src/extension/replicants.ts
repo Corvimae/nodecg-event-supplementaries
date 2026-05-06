@@ -26,3 +26,28 @@ export const hostName = nodecg.Replicant<string>('host:name', BUNDLE_NAME, {
 export const hostPronouns = nodecg.Replicant<string>('host:pronouns', BUNDLE_NAME, {
   defaultValue: '',
 })
+
+export const activeLowerThird = nodecg.Replicant<Record<string, unknown> | null>('lowerThirds:active', BUNDLE_NAME, {
+  defaultValue: null,
+  persistent: false,
+});
+
+export const isLowerThirdAnimating = nodecg.Replicant<boolean>('lowerThirds:isAnimating', BUNDLE_NAME, {
+  defaultValue: false,
+  persistent: false,
+});
+
+export const lowerThirdLastRequested = nodecg.Replicant<number>('lowerThirds:lastRequested', BUNDLE_NAME, {
+  defaultValue: 0,
+  persistent: false,
+});
+
+export const lowerThirdDisplayDurationMs = nodecg.Replicant<number>('lowerThirds:displayDurationMs', BUNDLE_NAME, {
+  defaultValue: 10_000,
+  persistent: false,
+});
+
+export const lowerThirdAnimationDurationMs = nodecg.Replicant<number>('lowerThirds:animationDurationMs', BUNDLE_NAME, {
+  defaultValue: 500,
+  persistent: false,
+});
