@@ -1,4 +1,4 @@
-# nodecg-event-supplimentaries
+# nodecg-event-supplementaries
 
 Various nodecg features that are useful across multiple types of events.
 
