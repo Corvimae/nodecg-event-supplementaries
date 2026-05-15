@@ -6,12 +6,12 @@ import { useFallbackReplicant } from '../../../utils/hooks';
 import { BUNDLE_NAME } from '../../../utils/utils';
 
 export const CountdownApp = () => {
-  const [countdownSecondsRemaining, setCountdownSecondsRemaining] = useFallbackReplicant('countdownSecondsRemaining', {
+  const [countdownSecondsRemaining, setCountdownSecondsRemaining] = useFallbackReplicant('countdown:secondsRemaining', {
     defaultValue: 0,
     bundle: BUNDLE_NAME,
   });
 
-  const [isCountdownRunning, setIsCountdownRunning] = useReplicant('isCountdownRunning', {
+  const [isCountdownRunning, setIsCountdownRunning] = useReplicant('countdown:isRunning', {
     defaultValue: false,
     bundle: BUNDLE_NAME,
   });
