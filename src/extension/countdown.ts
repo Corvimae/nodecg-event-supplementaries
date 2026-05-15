@@ -3,7 +3,6 @@ import { countdownSecondsRemaining, isCountdownRunning } from './replicants';
 
 export function startCountdownInterval(_nodecg: NodeCG.ServerAPI) {
   setInterval(() => {
-    console.log('counting down');
     if (isCountdownRunning.value) {
       if (countdownSecondsRemaining.value > 0) {
         countdownSecondsRemaining.value -= 1;
