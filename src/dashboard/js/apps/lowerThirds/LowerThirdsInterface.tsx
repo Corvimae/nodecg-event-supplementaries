@@ -75,10 +75,10 @@ export function LowerThirdsInterface<T>({
     <>
       <BigActions>
         <Button onClick={handleShowLowerThird} disabled={!isLowerThirdTriggerable}>
-          Show Nameplates ({Math.floor(lowerThirdDuration / 1000)}s)
+          Show Lower Third ({Math.floor(lowerThirdDuration / 1000)}s)
         </Button>
         <Button onClick={handleShowLowerThirdIndefinite} disabled={!isLowerThirdTriggerable}>
-          Show Nameplates (indefinite)
+          Show Lower Third (indefinite)
         </Button>
       </BigActions>
       {children}
