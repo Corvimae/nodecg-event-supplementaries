@@ -11,3 +11,4 @@ various features that another bundle can use for layout implementations.
 - Now Playing value read from a file (intended for use with foobar2000).
 - Host name + pronouns input.
 - Controls for nameplates + CTA-style lower thirds.
+- Content warning toggle + message input.

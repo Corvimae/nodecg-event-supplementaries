@@ -23,7 +23,8 @@
         "src/dashboard/html/countdown.html",
         "src/dashboard/html/foobar-now-playing.html",
         "src/dashboard/html/host.html",
-        "src/dashboard/html/lower-thirds.html"
+        "src/dashboard/html/lower-thirds.html",
+        "src/dashboard/html/content-warning.html"
       ],
       "distDir": "dashboard",
       "publicUrl": "/bundles/nodecg-event-supplementaries/dashboard"
@@ -76,6 +77,13 @@
         "name": "supplementaries-lower-thirds",
         "title": "Supplementaries - Lower Thirds",
         "file": "lower-thirds.html",
+        "width": 4,
+        "workspace": "Supplementaries"
+      },
+      {
+        "name": "supplementaries-content-warning",
+        "title": "Supplementaries - Content Warning",
+        "file": "content-warning.html",
         "width": 4,
         "workspace": "Supplementaries"
       }
